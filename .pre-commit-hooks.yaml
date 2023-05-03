@@ -1,0 +1,9 @@
+- id: pre-commit-import-linter
+  name: enforce contracts of import-linter
+  description: this hook ensures the project does not violate import rules.
+  entry: lint-imports
+  language: python
+  language_version: python3
+  pass_filenames: false
+  always_run: true
+  args: ["--verbose", "--show-timings"]

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pre_commit_import_linter"
+version = "1.0.0"
+description = ""
+authors = ["CJHwong <cjhwong@gmail.com>"]
+
+packages = [
+    { include="src", from="." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+import-linter = "~1.8.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
